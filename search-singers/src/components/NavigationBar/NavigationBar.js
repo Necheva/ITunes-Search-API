@@ -24,7 +24,7 @@ class NavigationBar extends React.Component {
                     placeholder="Type in to Search..." 
                     className="input-title" 
 
-                    value={this.props.req}
+                    value={artistName}
                     onChange={this.handleChange}
                 />
 
