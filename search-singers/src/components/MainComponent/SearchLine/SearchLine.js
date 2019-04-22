@@ -5,7 +5,7 @@ import './SearchLine.css';
 
 const API = 'https://itunes.apple.com/search?term=';
   
-  export class SearchLine extends React.Component {
+class SearchLine extends React.Component {
 
     constructor(props) {
         super(props)
@@ -28,7 +28,7 @@ const API = 'https://itunes.apple.com/search?term=';
     }
 
     componentDidMount() {
-        this.MakeARequest('adele');
+        this.MakeARequest('sia');
     }
 
     render() {
@@ -41,9 +41,9 @@ const API = 'https://itunes.apple.com/search?term=';
                         return(
                             <div key={i}>
                                 <div className="box-wrapper">
-                                    <a href={data_iter.previewUrl}>
+                                    {/* <a href={data_iter.previewUrl}>
                                         <img src={require('./play-circle-solid.svg')} width={150} height={25} />   
-                                    </a>   
+                                    </a>    */}
                                     <div className="image">
                                         <img src= {data_iter.artworkUrl100} width={150} height={150} />          
                                     </div>
@@ -51,10 +51,18 @@ const API = 'https://itunes.apple.com/search?term=';
                                         <div className="title">
                                             {data_iter.artistName}
                                         </div>
+                                        <div className="title">
+                                            song:
+                                        </div>
                                         <div className="track-name">
                                             {data_iter.trackName}
                                         </div>
-                        
+                                        <div className="title">
+                                            album: 
+                                        </div>
+                                        <div className="title">
+                                           '{data_iter.collectionName}'
+                                        </div>
                                     </div>
                                 </div>
                             </div>
