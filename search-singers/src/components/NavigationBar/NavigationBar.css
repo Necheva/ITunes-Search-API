@@ -1,0 +1,51 @@
+.navContainer {
+    display: flex;
+    padding-bottom: 2px;
+    border-radius: 50px;
+}
+
+.navBlock {
+  width: 100%;
+  background-color: rgb(39, 38, 38);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color:  #868686;
+  }
+
+  a:visited {
+    color: #A7A4A4; 
+    
+   }
+
+   a:active {
+    color:  #868686; 
+   }
+
+   input {
+    border: none;
+    background: transparent;
+    size: 5px;
+    outline: none;
+    color: white;
+  }
+
+  .input-title {
+    font-weight: 500;
+    color: #A7A4A4;
+    align-self: center;
+    padding-left: 15px;
+  }
+  
+  .navImage {
+    align-self: center;
+  }

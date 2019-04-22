@@ -1,0 +1,53 @@
+
+.searchContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.image {
+    overflow:hidden;
+    width: 150px;
+    height:150px;
+    border-radius: 100px;
+}
+
+.image img {
+    transition: all 0.8s ease-out;
+    position: relative;
+}
+    
+.image img:hover{
+    transform: scale(1.2);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: rgb(219, 218, 218);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.track-name {
+    color: rgb(219, 218, 218);
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.box-wrapper {
+    display: block;
+    height: 260px;
+    width: 150px;
+    color: white;
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+}
